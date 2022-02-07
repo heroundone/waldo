@@ -1,0 +1,41 @@
+hr {
+    margin-bottom: 0px;
+}
+
+header {
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 55px;
+    height: 14vh;
+}
+
+img[id="Wizard"] {
+    height: 14vh;
+}
+
+img[id="waldoImage"] {
+    width: 1000px;
+    height: 600px;
+}
+
+#menuContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    border: solid black .5px;
+    background: grey;
+}
+
+div[id="menuContainer"] div {
+    border: solid black .5px;
+}
+
+div[id="menuContainer"] div:hover {
+    background-color: yellow;
+}

@@ -1,8 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import './styles/index.css';
+import App from './components/App';
+
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from "firebase/firestore"
+
+
+// TODO: Replace the following with your app's Firebase project configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyDk0qLhcCz-bTVmgSXGsbwdJmP8xWbm9Q4",
+    authDomain: "waldo-fec10.firebaseapp.com",
+    projectId: "waldo-fec10",
+    storageBucket: "waldo-fec10.appspot.com",
+    messagingSenderId: "176893580076",
+    appId: "1:176893580076:web:9b030c89e691cc9c0a5289"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore();
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +27,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export {app, db};
