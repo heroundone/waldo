@@ -39,3 +39,10 @@ div[id="menuContainer"] div {
 div[id="menuContainer"] div:hover {
     background-color: yellow;
 }
+
+#wrongAnswer {
+    position: absolute;
+    color: red;
+    background-color: black;
+    padding: 3px;
+}
